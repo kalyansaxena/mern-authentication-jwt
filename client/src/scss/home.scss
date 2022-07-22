@@ -1,0 +1,55 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    margin: 10px 0px;
+  }
+
+  button {
+    margin: 0.5rem 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home {
+    h1 {
+      margin: 10px 0px;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 0px 14px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 576px) {
+  .home {
+    h1 {
+      margin: 10px 0px;
+      text-align: center;
+      font-size: 1.8rem;
+      padding: 0px 16px;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
